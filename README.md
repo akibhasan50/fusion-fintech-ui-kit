@@ -2,7 +2,8 @@
 
 A premium, design-first UI component library built for modern financial dashboards. 
 
-![Screenshot of the Fintech Fusion Dashboard](https://raw.githubusercontent.com/akibhasan50/fintech-ui-kit/main/assets/preview.png) *(Placeholder if not yet available, delete and add your own screenshot!)*
+**🌐 [Live Demo Dashboard](https://akibhasan50.github.io/fusion-fintech-ui-kit/)**
+
 
 ## ✨ Key Features
 
