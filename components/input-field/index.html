@@ -1,0 +1,153 @@
+<!-- =============================================
+     COMPONENTS/INPUT-FIELD/index.html
+     Input Field Component – Full Demo
+     ============================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech UI Kit • Input Field</title>
+
+    <link rel="stylesheet" href="../../tokens/tokens.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="input-field.css">
+
+    <style>
+        .demo {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .demo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--color-gray-base-regular);
+            padding-bottom: 20px;
+        }
+
+        .demo-grid {
+            display: grid;
+            gap: 40px;
+        }
+
+        .demo-card {
+            background: var(--color-surface-low-2);
+            border-radius: var(--radius-m);
+            padding: 32px;
+            border: 1px solid var(--color-gray-base-extra);
+        }
+
+        .dark .demo-card {
+            background: var(--color-surface-medium);
+        }
+
+        .variant-group {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            max-width: 420px;
+        }
+    </style>
+</head>
+
+<body class="demo">
+
+    <div class="demo-grid">
+
+        <!-- 1. Default + Sizes -->
+        <div class="demo-card">
+            <h3 style="margin-bottom: 16px;">Default – All Sizes</h3>
+            <div class="variant-group">
+                <div class="input-field" data-size="small" data-label="true">
+                    <label class="input-field__label">Small Input</label>
+                    <div class="input-field__wrapper">
+                        <input class="input-field__input" type="text" placeholder="Enter value..."
+                            value="Fintech Fusion">
+                    </div>
+                </div>
+
+                <div class="input-field" data-size="medium" data-label="true">
+                    <label class="input-field__label">Medium Input (default)</label>
+                    <div class="input-field__wrapper">
+                        <input class="input-field__input" type="text" placeholder="Enter value...">
+                    </div>
+                </div>
+
+                <div class="input-field" data-size="large" data-label="true">
+                    <label class="input-field__label">Large Input</label>
+                    <div class="input-field__wrapper">
+                        <input class="input-field__input" type="text" placeholder="Enter value...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Variants (Error / Success) -->
+        <div class="demo-card">
+            <h3 style="margin-bottom: 16px;">Variants</h3>
+            <div class="variant-group">
+                <div class="input-field" data-variant="error" data-label="true" data-helper="true">
+                    <label class="input-field__label">Email</label>
+                    <div class="input-field__wrapper">
+                        <input class="input-field__input" type="email" value="invalid@email">
+                    </div>
+                    <span class="input-field__helper">Please enter a valid email address</span>
+                </div>
+
+                <div class="input-field" data-variant="success" data-label="true" data-helper="true">
+                    <label class="input-field__label">Amount</label>
+                    <div class="input-field__wrapper">
+                        <input class="input-field__input" type="text" value="1,250.00">
+                    </div>
+                    <span class="input-field__helper">Transaction ready</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. With Icons -->
+        <div class="demo-card">
+            <h3 style="margin-bottom: 16px;">With Icons</h3>
+            <div class="variant-group">
+                <div class="input-field" data-size="medium" data-icon-left="true" data-label="true">
+                    <label class="input-field__label">Search</label>
+                    <div class="input-field__wrapper">
+                        <span class="input-field__icon-left">🔍</span>
+                        <input class="input-field__input" type="text" placeholder="Search transactions...">
+                    </div>
+                </div>
+
+                <div class="input-field" data-size="medium" data-icon-right="true" data-label="true">
+                    <label class="input-field__label">Password</label>
+                    <div class="input-field__wrapper">
+                        <input class="input-field__input" type="password" placeholder="••••••••">
+                        <span class="input-field__icon-right">👁</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Disabled + States -->
+        <div class="demo-card">
+            <h3 style="margin-bottom: 16px;">States</h3>
+            <div class="variant-group">
+                <div class="input-field" data-disabled="true" data-label="true">
+                    <label class="input-field__label">Disabled Input</label>
+                    <div class="input-field__wrapper">
+                        <input class="input-field__input" type="text" value="Cannot edit" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/theme-sync.js"></script>
+</body>
+
+</html>

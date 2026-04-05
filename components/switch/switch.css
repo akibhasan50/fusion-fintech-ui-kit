@@ -1,0 +1,125 @@
+/* =============================================
+   COMPONENTS/SWITCH/switch.css
+   Single-base Switch / Toggle – Fintech UI Kit
+   ============================================= */
+
+.switch {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    gap: var(--spacing-xs);
+    transition: opacity 0.2s ease;
+}
+
+/* Hidden native input */
+.switch__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Custom Switch Track */
+.switch__track {
+    position: relative;
+    display: block;
+    width: 44px;
+    height: 24px;
+    background-color: var(--color-gray-base-medium);
+    border-radius: var(--radius-full);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+.dark .switch__track {
+    background-color: var(--color-gray-base-dark);
+}
+
+/* Switch Knob */
+.switch__knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.switch__label {
+    font-size: var(--font-size-body-s);
+    color: var(--color-black-base);
+    font-family: var(--font-general-font-name);
+}
+
+.dark .switch__label {
+    color: var(--color-black-inverse);
+}
+
+/* ============== STATES ============== */
+
+/* Checked state */
+.switch__input:checked ~ .switch__track {
+    background-color: var(--color-accent-base-accent-primary);
+}
+
+.switch__input:checked ~ .switch__track .switch__knob {
+    transform: translateX(20px);
+}
+
+/* Hover effects */
+.switch:hover .switch__track {
+    box-shadow: 0 0 0 4px var(--color-accent-base-accent-primary-a8);
+}
+
+/* Focus state */
+.switch__input:focus-visible ~ .switch__track {
+    box-shadow: 0 0 0 4px var(--color-accent-base-accent-primary-a20);
+}
+
+/* ============== SIZES ============== */
+
+.switch[data-size="small"] .switch__track {
+    width: 32px;
+    height: 18px;
+}
+
+.switch[data-size="small"] .switch__knob {
+    width: 14px;
+    height: 14px;
+}
+
+.switch[data-size="small"] .switch__input:checked ~ .switch__track .switch__knob {
+    transform: translateX(14px);
+}
+
+.switch[data-size="large"] .switch__track {
+    width: 56px;
+    height: 30px;
+}
+
+.switch[data-size="large"] .switch__knob {
+    width: 26px;
+    height: 26px;
+}
+
+.switch[data-size="large"] .switch__input:checked ~ .switch__track .switch__knob {
+    transform: translateX(26px);
+}
+
+/* ============== DISABLED STATE ============== */
+
+.switch[data-disabled="true"] {
+    opacity: var(--opacity-states-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.switch[data-disabled="true"] .switch__track {
+    background-color: var(--color-gray-base-ultra);
+}

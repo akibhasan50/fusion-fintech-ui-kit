@@ -1,0 +1,126 @@
+/* =============================================
+   COMPONENTS/SLIDER/slider.css
+   Single-base Slider – Fintech UI Kit
+   ============================================= */
+
+.slider {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xs);
+}
+
+.slider__label {
+    font-size: var(--font-size-caption-m);
+    font-weight: var(--font-general-weight-600);
+    color: var(--color-black-base);
+}
+
+.dark .slider__label {
+    color: var(--color-white-base);
+}
+
+.slider__track-container {
+    position: relative;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+/* Hidden native input for functionality */
+.slider__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 5;
+    margin: 0;
+}
+
+/* Custom Track Background */
+.slider__track {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: var(--color-gray-base-extra);
+    border-radius: var(--radius-full);
+}
+
+.dark .slider__track {
+    background-color: var(--color-gray-base-dark);
+}
+
+/* Active Fill */
+.slider__fill {
+    position: absolute;
+    height: 6px;
+    background-color: var(--color-accent-base-accent-primary);
+    border-radius: var(--radius-full);
+    width: 50%; /* Default value, updated by JS */
+    z-index: 2;
+}
+
+/* Custom Thumb */
+.slider__thumb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 3px solid var(--color-accent-base-accent-primary);
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    left: 50%; /* Default value, updated by JS */
+    transform: translateX(-50%);
+    z-index: 3;
+    pointer-events: none;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+}
+
+.slider__input:active ~ .slider__thumb {
+    transform: translateX(-50%) scale(1.2);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Values Footer */
+.slider__values {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-caption-s);
+    color: var(--color-gray-base-regular);
+}
+
+/* ============== SIZES ============== */
+
+.slider[data-size="small"] .slider__track,
+.slider[data-size="small"] .slider__fill {
+    height: 4px;
+}
+
+.slider[data-size="small"] .slider__thumb {
+    width: 16px;
+    height: 16px;
+}
+
+.slider[data-size="large"] .slider__track,
+.slider[data-size="large"] .slider__fill {
+    height: 8px;
+}
+
+.slider[data-size="large"] .slider__thumb {
+    width: 24px;
+    height: 24px;
+}
+
+/* ============== DISABLED STATE ============== */
+
+.slider[data-disabled="true"] {
+    opacity: var(--opacity-states-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.slider[data-disabled="true"] .slider__fill {
+    background-color: var(--color-gray-base-regular);
+}

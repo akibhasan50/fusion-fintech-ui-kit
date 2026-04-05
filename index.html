@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech UI Kit - Premium Dashboard</title>
+    <!-- Import tokens + global styles -->
+    <link rel="stylesheet" href="./tokens/tokens.css">
+    <link rel="stylesheet" href="./styles/global.css">
+
+    <style>
+        :root {
+            --sidebar-width: 260px;
+            --header-height: 72px;
+            --transition-speed: 0.3s;
+        }
+
+        body {
+            background-color: var(--color-surface-low-1);
+            color: var(--color-black-base);
+            font-family: var(--font-general-font-name), 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            transition: background-color var(--transition-speed) ease;
+        }
+
+        /* --- Ambient Background --- */
+        body::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: -10%;
+            width: 120%;
+            height: 120%;
+            background:
+                radial-gradient(circle at 10% 10%, var(--color-accent-base-accent-primary-a8) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, var(--color-accent-base-accent-primary-a8) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .dark body {
+            background-color: #0d0f12;
+            color: var(--color-black-inverse);
+        }
+
+        /* --- Sidebar Styling (Glassmorphism) --- */
+        .sidebar {
+            width: var(--sidebar-width);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-right: 1px solid var(--color-gray-base-ultra);
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            transition: all var(--transition-speed);
+        }
+
+        .dark .sidebar {
+            background: rgba(19, 22, 26, 0.75);
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .sidebar-header {
+            padding: 32px var(--spacing-xl) 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+
+        .sidebar-title {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--color-black-base);
+            text-transform: uppercase;
+            background: linear-gradient(135deg, var(--color-black-base) 0%, var(--color-gray-base-dark) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .dark .sidebar-title {
+            background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .sidebar-subtitle {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-accent-base-accent-primary);
+            opacity: 0.8;
+        }
+
+        /* --- Navigation Items --- */
+        .sidebar-nav {
+            flex: 1;
+            padding: 0 12px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .nav-label {
+            padding: 12px var(--spacing-xl);
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-gray-base-regular);
+            margin-top: 12px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+            color: var(--color-gray-base-dark);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            margin-bottom: 2px;
+        }
+
+        .dark .nav-item {
+            color: var(--color-gray-base-medium);
+        }
+
+        .nav-item:hover {
+            background: rgba(37, 99, 235, 0.05);
+            color: var(--color-accent-base-accent-primary);
+        }
+
+        .nav-item.active {
+            background: var(--color-accent-base-accent-primary);
+            color: #fff;
+            box-shadow: 0 4px 12px var(--color-accent-base-accent-primary-a20);
+        }
+
+        /* --- Main Content Area --- */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+            position: relative;
+        }
+
+        /* --- Top App Header --- */
+        .app-header {
+            height: var(--header-height);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 32px;
+            background: transparent;
+            border-bottom: 1px solid transparent;
+        }
+
+        .stage-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .stage-badge {
+            background: var(--color-accent-base-accent-primary-a8);
+            color: var(--color-accent-base-accent-primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* --- Theme Toggle Switch --- */
+        .theme-switch {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--color-surface-low-2);
+            padding: 6px 14px;
+            border-radius: 30px;
+            border: 1px solid var(--color-gray-base-extra);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .dark .theme-switch {
+            background: #1e2229;
+            border-color: #2e353f;
+        }
+
+        .theme-switch span {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-gray-base-dark);
+        }
+
+        .dark .theme-switch span {
+            color: #fff;
+        }
+
+        /* --- Browser Stage (Iframe Container) --- */
+        .stage-view {
+            flex: 1;
+            padding: 0 32px 32px 32px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .browser-mock {
+            flex: 1;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid var(--color-gray-base-extra);
+            position: relative;
+        }
+
+        .dark .browser-mock {
+            background: #13161a;
+            border-color: #2e353f;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .browser-header {
+            height: 48px;
+            background: var(--color-surface-low-2);
+            border-bottom: 1px solid var(--color-gray-base-extra);
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            justify-content: space-between;
+        }
+
+        .dark .browser-header {
+            background: #1a1e24;
+            border-color: #2e353f;
+        }
+
+        .browser-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            opacity: 0.6;
+        }
+
+        .dot.red {
+            background: #ff5f56;
+        }
+
+        .dot.yellow {
+            background: #ffbd2e;
+        }
+
+        .dot.green {
+            background: #27c93f;
+        }
+
+        .browser-address {
+            background: var(--color-surface-low-1);
+            padding: 4px 20px;
+            border-radius: 6px;
+            font-size: 11px;
+            color: var(--color-gray-base-regular);
+            width: 50%;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .dark .browser-address {
+            background: #0d0f12;
+            color: var(--color-gray-base-medium);
+        }
+
+        .iframe-container {
+            flex: 1;
+            width: 100%;
+            border: none;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="sidebar-title">Fusion</h1>
+            <span class="sidebar-subtitle">Fintech UI Kit</span>
+        </div>
+
+        <nav class="sidebar-nav" id="component-nav">
+            <div class="nav-label">Core Kit</div>
+            <a class="nav-item active" data-src="components/button/index.html">Button</a>
+            <a class="nav-item" data-src="components/input-field/index.html">Input Field</a>
+            <a class="nav-item" data-src="components/select/index.html">Select</a>
+
+            <div class="nav-label">Inputs</div>
+            <a class="nav-item" data-src="components/checkbox/index.html">Checkbox</a>
+            <a class="nav-item" data-src="components/switch/index.html">Switch</a>
+            <a class="nav-item" data-src="components/slider/index.html">Slider</a>
+
+            <div class="nav-label">Layout</div>
+            <a class="nav-item" data-src="components/card/index.html">Card</a>
+            <a class="nav-item" data-src="components/modal/index.html">Modal</a>
+
+            <div class="nav-label">Misc</div>
+            <a class="nav-item" data-src="components/badge/index.html">Badge</a>
+            <a class="nav-item" data-src="components/navigation/index.html">Navigation</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="app-header">
+            <div class="stage-title">
+                <span id="active-component-name" style="font-weight: 700; font-size: 20px;">Button</span>
+                <span class="stage-badge">Live Demo</span>
+            </div>
+
+            <div class="theme-switch" id="theme-toggle-btn">
+                <span id="theme-status-text">Light Mode</span>
+                <div
+                    style="width: 32px; height: 18px; background: var(--color-accent-base-accent-primary); border-radius: 10px; position: relative;">
+                    <div id="switch-thumb"
+                        style="width: 14px; height: 14px; background: #fff; border-radius: 50%; position: absolute; top: 2px; left: 2px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="stage-view">
+            <div class="browser-mock">
+                <div class="browser-header">
+                    <div class="browser-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <div class="browser-address" id="browser-url">components/button/index.html</div>
+                    <div style="width: 40px;"></div> <!-- spacer -->
+                </div>
+                <iframe id="component-frame" class="iframe-container" src="components/button/index.html"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const themeBtn = document.getElementById('theme-toggle-btn');
+        const themeText = document.getElementById('theme-status-text');
+        const themeThumb = document.getElementById('switch-thumb');
+        const iframe = document.getElementById('component-frame');
+        const browserUrl = document.getElementById('browser-url');
+        const componentTitle = document.getElementById('active-component-name');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        // Navigation Handling
+        navItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector('.nav-item.active')?.classList.remove('active');
+                item.classList.add('active');
+
+                const name = item.textContent;
+                const src = item.getAttribute('data-src');
+
+                componentTitle.textContent = name;
+                browserUrl.textContent = src;
+
+                // Add hash to new src for initial state
+                const isDark = document.documentElement.classList.contains('dark');
+                iframe.src = src + (isDark ? '#dark' : '#light');
+            });
+        });
+
+        // Theme Handling
+        function setTheme(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                themeText.textContent = 'Dark Mode';
+                themeThumb.style.transform = 'translateX(14px)';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                themeText.textContent = 'Light Mode';
+                themeThumb.style.transform = 'translateX(0)';
+                localStorage.setItem('theme', 'light');
+            }
+
+            // Push theme to iframe via URL Hash
+            syncIframeHash(isDark);
+        }
+
+        function syncIframeHash(isDark) {
+            const currentSrc = iframe.src.split('#')[0];
+            iframe.src = currentSrc + (isDark ? '#dark' : '#light');
+        }
+
+        // Initialize Theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        setTheme(savedTheme === 'dark');
+
+        themeBtn.addEventListener('click', () => {
+            const isDark = !document.documentElement.classList.contains('dark');
+            setTheme(isDark);
+        });
+
+        // Initial Hash Push on load
+        iframe.addEventListener('load', () => {
+            const isDark = document.documentElement.classList.contains('dark');
+            // We only push hash if not already set correctly
+            if (!iframe.src.includes('#')) {
+                syncIframeHash(isDark);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card - Fintech UI Kit</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../button/button.css">
+    <link rel="stylesheet" href="card.css">
+    <style>
+        .demo-container {
+            padding: 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .demo-section {
+            margin-bottom: 64px;
+        }
+        .demo-title {
+            font-size: 24px;
+            margin-bottom: 32px;
+            color: var(--color-black-inverse);
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-header">
+            <h1 class="demo-title" style="margin-bottom: 0;">Card Component</h1>
+        </div>
+
+        <!-- Section 1: Variants -->
+        <div class="demo-section">
+            <h2 class="demo-title">Basic Variants</h2>
+            <div class="demo-grid">
+                <!-- Default -->
+                <div class="card" data-variant="default">
+                    <div class="card__header">
+                        <h3 class="card__title">Default Card</h3>
+                        <p class="card__subtitle">Simple background with border</p>
+                    </div>
+                    <div class="card__content">
+                        <p>This is the standard card used for grouping related content in the dashboard.</p>
+                    </div>
+                </div>
+
+                <!-- Elevated -->
+                <div class="card" data-variant="elevated">
+                    <div class="card__header">
+                        <h3 class="card__title">Elevated Card</h3>
+                        <p class="card__subtitle">With soft shadows</p>
+                    </div>
+                    <div class="card__content">
+                        <p>Use elevated cards to highlight important interactive items or sections.</p>
+                    </div>
+                </div>
+
+                <!-- Outline -->
+                <div class="card" data-variant="outline">
+                    <div class="card__header">
+                        <h3 class="card__title">Outline Card</h3>
+                        <p class="card__subtitle">Light border, no shadow</p>
+                    </div>
+                    <div class="card__content">
+                        <p>Ideal for secondary information or nested content areas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Actionable Cards -->
+        <div class="demo-section">
+            <h2 class="demo-title">Product & Action Cards</h2>
+            <div class="demo-grid">
+                <!-- Premium Plan -->
+                <div class="card" data-variant="elevated">
+                    <div class="card__header">
+                        <h3 class="card__title">Premium Plan</h3>
+                        <p class="card__subtitle">Unlock all fintech features</p>
+                    </div>
+                    <div class="card__content">
+                        <p>Get access to international transfers, crypto trading, and 2% cashback on all transactions.</p>
+                        <ul style="margin-top: 16px; padding-left: 20px; color: var(--color-gray-base-regular);">
+                            <li>Unlimited transfers</li>
+                            <li>Priority support</li>
+                        </ul>
+                    </div>
+                    <div class="card__footer">
+                        <button class="button" data-variant="primary" style="width: 100%;">Upgrade Now</button>
+                    </div>
+                </div>
+
+                <!-- Security Alert -->
+                <div class="card" data-variant="outline">
+                    <div class="card__header">
+                        <h3 class="card__title">Security Alert</h3>
+                        <p class="card__subtitle">Suspicious activity detected</p>
+                    </div>
+                    <div class="card__content">
+                        <p>New login detected from a device in London, UK. If this wasn't you, please secure your account.</p>
+                    </div>
+                    <div class="card__footer" style="gap: 12px; display: flex;">
+                        <button class="button" data-variant="secondary" data-size="small">It was me</button>
+                        <button class="button" data-variant="outline" data-size="small">Secure account</button>
+                    </div>
+                </div>
+
+                <!-- Transaction Card -->
+                <div class="card" data-variant="default">
+                    <div class="card__header">
+                        <h3 class="card__title">Latest Transaction</h3>
+                        <p class="card__subtitle">Today, 2:45 PM</p>
+                    </div>
+                    <div class="card__content" style="text-align: center; padding: 24px 0;">
+                        <div style="font-size: 32px; font-weight: 700; color: var(--color-accent-base-accent-success);">+$1,540.00</div>
+                        <p style="color: var(--color-gray-base-regular);">from Amazon Marketplace</p>
+                    </div>
+                    <div class="card__footer">
+                        <button class="button" data-variant="ghost" data-size="small" style="width: 100%;">View Receipt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../scripts/theme-sync.js"></script>
+</body>
+</html>

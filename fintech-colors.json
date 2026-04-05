@@ -1,0 +1,2606 @@
+[
+  {
+    "Colors": {
+      "modes": {
+        "Light": {
+          "Colors": {
+            "Black Inverse": {
+              "blackInverse": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBase}"
+              },
+              "blackInverseA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA80}"
+              },
+              "blackInverseA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA60}"
+              },
+              "blackInverseA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA40}"
+              },
+              "blackInverseA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA20}"
+              },
+              "blackInverseA12": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA12}"
+              },
+              "blackInverseA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA8}"
+              },
+              "blackInverseA6": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA6}"
+              },
+              "blackInverseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA0}"
+              }
+            },
+            "White Inverse": {
+              "whiteInverse": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              },
+              "whiteInverseA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA80}"
+              },
+              "whiteInverseA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA60}"
+              },
+              "whiteInverseA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA40}"
+              },
+              "whiteInverseA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA20}"
+              },
+              "whiteInverseA12": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA12}"
+              },
+              "whiteInverseA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA8}"
+              },
+              "whiteInverseA6": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA6}"
+              },
+              "whiteInverseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA0}"
+              }
+            },
+            "Background": {
+              "bgBase": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              },
+              "bgBaseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA0}"
+              },
+              "bgUltraThin": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltra}"
+              },
+              "bgUltraThinA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltraA0}"
+              },
+              "bgThin": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseExtra}"
+              },
+              "bgThinA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseExtraA0}"
+              },
+              "bgRegular": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseDark}"
+              },
+              "bgRegularA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseDarkA0}"
+              },
+              "bgMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseMedium}"
+              },
+              "bgMediumA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseMediumA0}"
+              }
+            },
+            "Surface Low": {
+              "surfaceLow1": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltra}"
+              },
+              "surfaceLow2": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              },
+              "surfaceLowA2": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA60}"
+              },
+              "surfaceLow3": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              },
+              "surfaceLowA3": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA60}"
+              },
+              "surfaceLow4": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              },
+              "surfaceLowA4": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA60}"
+              },
+              "surfaceLow5": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              }
+            },
+            "Surface Medium": {
+              "surfaceMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              },
+              "surfaceMedium2": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltra}"
+              },
+              "surfaceMediumA2": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA60}"
+              },
+              "surfaceMedium3": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltra}"
+              },
+              "surfaceMediumA3": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA40}"
+              },
+              "surfaceMedium4": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltra}"
+              },
+              "surfaceMediumA4": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA20}"
+              },
+              "surfaceMedium5": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltra}"
+              }
+            },
+            "Surface Custom": {
+              "surfaceWhiteLow": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              },
+              "surfaceWhiteMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              },
+              "surfaceWhiteHigh": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              }
+            },
+            "Overlay": {
+              "overlayBold": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA60}"
+              },
+              "overlayMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA40}"
+              },
+              "overlayLight": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA12}"
+              },
+              "overlaySwap": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Inverse.whiteInverseA80}"
+              }
+            },
+            "Black Base": {
+              "blackBase": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#13161a"
+              },
+              "blackBaseA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(19, 22, 26, 0.72)"
+              },
+              "blackBaseA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(19, 22, 26, 0.56)"
+              },
+              "blackBaseA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(19, 22, 26, 0.32)"
+              },
+              "blackBaseA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(19, 22, 26, 0.12)"
+              },
+              "blackBaseA12": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(19, 22, 26, 0.1)"
+              },
+              "blackBaseA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(19, 22, 26, 0.06)"
+              },
+              "blackBaseA6": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(19, 22, 26, 0.04)"
+              },
+              "blackBaseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(19, 22, 26, 0)"
+              }
+            },
+            "White Base": {
+              "whiteBase": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#ffffff"
+              },
+              "whiteBaseA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 255, 255, 0.8)"
+              },
+              "whiteBaseA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 255, 255, 0.6)"
+              },
+              "whiteBaseA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 255, 255, 0.4)"
+              },
+              "whiteBaseA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 255, 255, 0.2)"
+              },
+              "whiteBaseA12": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 255, 255, 0.12)"
+              },
+              "whiteBaseA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 255, 255, 0.08)"
+              },
+              "whiteBaseA6": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 255, 255, 0.06)"
+              },
+              "whiteBaseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 255, 255, 0)"
+              }
+            },
+            "Accent Base": {
+              "accentPrimary": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#2563eb"
+              },
+              "accentPrimaryA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0.6)"
+              },
+              "accentPrimaryA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0.4)"
+              },
+              "accentPrimaryA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0.2)"
+              },
+              "accentPrimaryA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0.08)"
+              },
+              "accentPrimaryA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0)"
+              },
+              "accentDanger": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#dc2626"
+              },
+              "accentDangerA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(220, 38, 38, 0.6)"
+              },
+              "accentDangerA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(220, 38, 38, 0.4)"
+              },
+              "accentDangerA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(220, 38, 38, 0.2)"
+              },
+              "accentDangerA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(220, 38, 38, 0.08)"
+              },
+              "accentDangerA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(220, 38, 38, 0)"
+              },
+              "accentSuccess": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#15803d"
+              },
+              "accentSuccessA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(21, 128, 61, 0.6)"
+              },
+              "accentSuccessA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(21, 128, 61, 0.4)"
+              },
+              "accentSuccessA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(21, 128, 61, 0.2)"
+              },
+              "accentSuccessA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(21, 128, 61, 0.08)"
+              },
+              "accentSuccessA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(21, 128, 61, 0)"
+              },
+              "accentWarning": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#f59e0b"
+              },
+              "accentWarningA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0.6)"
+              },
+              "accentWarningA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0.4)"
+              },
+              "accentWarningA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0.2)"
+              },
+              "accentWarningA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0.08)"
+              },
+              "accentWarningA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0)"
+              }
+            },
+            "Gray Base": {
+              "grayBaseUltra": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#f5f6f6"
+              },
+              "grayBaseUltraA85": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 246, 246, 0.6)"
+              },
+              "grayBaseUltraA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 246, 246, 0)"
+              },
+              "grayBaseExtra": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#eceded"
+              },
+              "grayBaseExtraA85": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(236, 237, 237, 0.6)"
+              },
+              "grayBaseExtraA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(236, 237, 237, 0)"
+              },
+              "grayBaseDark": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#e2e3e5"
+              },
+              "grayBaseDarkA85": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(226, 227, 229, 0.6)"
+              },
+              "grayBaseDarkA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(226, 227, 229, 0)"
+              },
+              "grayBaseMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#d9dadc"
+              },
+              "grayBaseMediumA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(217, 218, 220, 0.6)"
+              },
+              "grayBaseMediumA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(217, 218, 220, 0)"
+              },
+              "grayBaseNormal": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#cfd1d3"
+              },
+              "grayBaseRegular": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#a6a7a9"
+              }
+            },
+            "RGB Base": {
+              "yellow": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#f5c400"
+              },
+              "yellowA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0.6)"
+              },
+              "yellowA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0.4)"
+              },
+              "yellowA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0.2)"
+              },
+              "yellowA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0.08)"
+              },
+              "yellowA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0)"
+              },
+              "orange": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#ff6a00"
+              },
+              "orangeA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0.6)"
+              },
+              "orangeA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0.4)"
+              },
+              "orangeA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0.2)"
+              },
+              "orangeA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0.08)"
+              },
+              "orangeA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0)"
+              },
+              "brown": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#a85b3e"
+              },
+              "brownA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0.6)"
+              },
+              "brownA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0.4)"
+              },
+              "brownA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0.2)"
+              },
+              "brownA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0.08)"
+              },
+              "brownA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0)"
+              },
+              "pink": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#fa4083"
+              },
+              "pinkA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0.6)"
+              },
+              "pinkA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0.4)"
+              },
+              "pinkA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0.2)"
+              },
+              "pinkA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0.08)"
+              },
+              "pinkA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0)"
+              },
+              "purple": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#732df5"
+              },
+              "purpleA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0.6)"
+              },
+              "purpleA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0.4)"
+              },
+              "purpleA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0.2)"
+              },
+              "purpleA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0.08)"
+              },
+              "purpleA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0)"
+              },
+              "blue": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#0077ff"
+              },
+              "blueA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0.6)"
+              },
+              "blueA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0.4)"
+              },
+              "blueA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0.2)"
+              },
+              "blueA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0.08)"
+              },
+              "blueA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0)"
+              },
+              "sky": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#2cb1f2"
+              },
+              "skyA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0.6)"
+              },
+              "skyA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0.4)"
+              },
+              "skyA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0.2)"
+              },
+              "skyA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0.08)"
+              },
+              "skyA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0)"
+              },
+              "mint": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#1adbb4"
+              },
+              "mintA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0.6)"
+              },
+              "mintA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0.4)"
+              },
+              "mintA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0.2)"
+              },
+              "mintA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0.08)"
+              },
+              "mintA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0)"
+              },
+              "teal": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#008080"
+              },
+              "tealA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0.6)"
+              },
+              "tealA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0.4)"
+              },
+              "tealA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0.2)"
+              },
+              "tealA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0.08)"
+              },
+              "tealA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0)"
+              },
+              "green": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#21a82e"
+              },
+              "greenA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0.6)"
+              },
+              "greenA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0.4)"
+              },
+              "greenA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0.2)"
+              },
+              "greenA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0.08)"
+              },
+              "greenA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0)"
+              }
+            }
+          }
+        },
+        "Dark": {
+          "Colors": {
+            "Black Inverse": {
+              "blackInverse": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBase}"
+              },
+              "blackInverseA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA80}"
+              },
+              "blackInverseA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA60}"
+              },
+              "blackInverseA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA40}"
+              },
+              "blackInverseA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA20}"
+              },
+              "blackInverseA12": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA12}"
+              },
+              "blackInverseA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA8}"
+              },
+              "blackInverseA6": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA6}"
+              },
+              "blackInverseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA0}"
+              }
+            },
+            "White Inverse": {
+              "whiteInverse": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBase}"
+              },
+              "whiteInverseA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA80}"
+              },
+              "whiteInverseA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA60}"
+              },
+              "whiteInverseA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA40}"
+              },
+              "whiteInverseA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA20}"
+              },
+              "whiteInverseA12": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA12}"
+              },
+              "whiteInverseA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA8}"
+              },
+              "whiteInverseA6": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA6}"
+              },
+              "whiteInverseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA0}"
+              }
+            },
+            "Background": {
+              "bgBase": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBase}"
+              },
+              "bgBaseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA0}"
+              },
+              "bgUltraThin": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBase}"
+              },
+              "bgUltraThinA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA0}"
+              },
+              "bgThin": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltra}"
+              },
+              "bgThinA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltraA0}"
+              },
+              "bgRegular": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseExtra}"
+              },
+              "bgRegularA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseExtraA0}"
+              },
+              "bgMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseDark}"
+              },
+              "bgMediumA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseDarkA0}"
+              }
+            },
+            "Surface Low": {
+              "surfaceLow1": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltra}"
+              },
+              "surfaceLow2": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltra}"
+              },
+              "surfaceLowA2": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseUltraA85}"
+              },
+              "surfaceLow3": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseExtra}"
+              },
+              "surfaceLowA3": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseExtraA85}"
+              },
+              "surfaceLow4": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseDark}"
+              },
+              "surfaceLowA4": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseDarkA85}"
+              },
+              "surfaceLow5": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseMedium}"
+              }
+            },
+            "Surface Medium": {
+              "surfaceMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseExtra}"
+              },
+              "surfaceMedium2": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseExtra}"
+              },
+              "surfaceMediumA2": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseExtraA85}"
+              },
+              "surfaceMedium3": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseDark}"
+              },
+              "surfaceMediumA3": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseDarkA85}"
+              },
+              "surfaceMedium4": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseMedium}"
+              },
+              "surfaceMediumA4": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseMediumA80}"
+              },
+              "surfaceMedium5": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Gray Base.grayBaseNormal}"
+              }
+            },
+            "Surface Custom": {
+              "surfaceWhiteLow": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA6}"
+              },
+              "surfaceWhiteMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA12}"
+              },
+              "surfaceWhiteHigh": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Base.whiteBaseA20}"
+              }
+            },
+            "Overlay": {
+              "overlayBold": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA80}"
+              },
+              "overlayMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA60}"
+              },
+              "overlayLight": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.Black Base.blackBaseA40}"
+              },
+              "overlaySwap": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$libraryName": "",
+                "$collectionName": "Colors",
+                "$value": "{Colors.White Inverse.whiteInverseA80}"
+              }
+            },
+            "Black Base": {
+              "blackBase": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#0e0e10"
+              },
+              "blackBaseA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(14, 14, 16, 0.8)"
+              },
+              "blackBaseA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(14, 14, 16, 0.6)"
+              },
+              "blackBaseA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(14, 14, 16, 0.4)"
+              },
+              "blackBaseA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(14, 14, 16, 0.2)"
+              },
+              "blackBaseA12": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(14, 14, 16, 0.12)"
+              },
+              "blackBaseA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(14, 14, 16, 0.08)"
+              },
+              "blackBaseA6": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(14, 14, 16, 0.06)"
+              },
+              "blackBaseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(14, 14, 16, 0)"
+              }
+            },
+            "White Base": {
+              "whiteBase": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#f9fafa"
+              },
+              "whiteBaseA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(249, 250, 250, 0.8)"
+              },
+              "whiteBaseA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(249, 250, 250, 0.6)"
+              },
+              "whiteBaseA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(249, 250, 250, 0.4)"
+              },
+              "whiteBaseA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(249, 250, 250, 0.2)"
+              },
+              "whiteBaseA12": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(249, 250, 250, 0.12)"
+              },
+              "whiteBaseA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(249, 250, 250, 0.08)"
+              },
+              "whiteBaseA6": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(249, 250, 250, 0.06)"
+              },
+              "whiteBaseA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(249, 250, 250, 0)"
+              }
+            },
+            "Accent Base": {
+              "accentPrimary": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#2563eb"
+              },
+              "accentPrimaryA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0.6)"
+              },
+              "accentPrimaryA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0.4)"
+              },
+              "accentPrimaryA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0.2)"
+              },
+              "accentPrimaryA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0.08)"
+              },
+              "accentPrimaryA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(37, 99, 235, 0)"
+              },
+              "accentDanger": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#ef4444"
+              },
+              "accentDangerA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(239, 68, 68, 0.6)"
+              },
+              "accentDangerA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(239, 68, 68, 0.4)"
+              },
+              "accentDangerA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(239, 68, 68, 0.2)"
+              },
+              "accentDangerA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(239, 68, 68, 0.08)"
+              },
+              "accentDangerA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(239, 68, 68, 0)"
+              },
+              "accentSuccess": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#16a34a"
+              },
+              "accentSuccessA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(22, 163, 74, 0.6)"
+              },
+              "accentSuccessA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(22, 163, 74, 0.4)"
+              },
+              "accentSuccessA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(22, 163, 74, 0.2)"
+              },
+              "accentSuccessA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(22, 163, 74, 0.08)"
+              },
+              "accentSuccessA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(22, 163, 74, 0)"
+              },
+              "accentWarning": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#f59e0b"
+              },
+              "accentWarningA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0.6)"
+              },
+              "accentWarningA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0.4)"
+              },
+              "accentWarningA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0.2)"
+              },
+              "accentWarningA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0.08)"
+              },
+              "accentWarningA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 158, 11, 0)"
+              }
+            },
+            "Gray Base": {
+              "grayBaseUltra": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#141415"
+              },
+              "grayBaseUltraA85": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(20, 20, 21, 0.85)"
+              },
+              "grayBaseUltraA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(20, 20, 21, 0)"
+              },
+              "grayBaseExtra": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#1a1a1b"
+              },
+              "grayBaseExtraA85": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 26, 27, 0.85)"
+              },
+              "grayBaseExtraA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 26, 27, 0)"
+              },
+              "grayBaseDark": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#222224"
+              },
+              "grayBaseDarkA85": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(34, 34, 36, 0.85)"
+              },
+              "grayBaseDarkA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(34, 34, 36, 0)"
+              },
+              "grayBaseMedium": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#2b2b2d"
+              },
+              "grayBaseMediumA80": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(43, 43, 45, 0.8)"
+              },
+              "grayBaseMediumA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(43, 43, 45, 0)"
+              },
+              "grayBaseNormal": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#48484a"
+              },
+              "grayBaseRegular": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#555557"
+              }
+            },
+            "RGB Base": {
+              "yellow": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#f5c400"
+              },
+              "yellowA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0.6)"
+              },
+              "yellowA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0.4)"
+              },
+              "yellowA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0.2)"
+              },
+              "yellowA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0.08)"
+              },
+              "yellowA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(245, 196, 0, 0)"
+              },
+              "orange": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#ff6a00"
+              },
+              "orangeA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0.6)"
+              },
+              "orangeA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0.4)"
+              },
+              "orangeA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0.2)"
+              },
+              "orangeA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0.08)"
+              },
+              "orangeA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(255, 106, 0, 0)"
+              },
+              "brown": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#a85b3e"
+              },
+              "brownA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0.6)"
+              },
+              "brownA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0.4)"
+              },
+              "brownA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0.2)"
+              },
+              "brownA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0.08)"
+              },
+              "brownA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(168, 91, 62, 0)"
+              },
+              "pink": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#fa4083"
+              },
+              "pinkA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0.6)"
+              },
+              "pinkA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0.4)"
+              },
+              "pinkA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0.2)"
+              },
+              "pinkA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0.08)"
+              },
+              "pinkA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(250, 64, 131, 0)"
+              },
+              "purple": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#732df5"
+              },
+              "purpleA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0.6)"
+              },
+              "purpleA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0.4)"
+              },
+              "purpleA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0.2)"
+              },
+              "purpleA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0.08)"
+              },
+              "purpleA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(115, 45, 245, 0)"
+              },
+              "blue": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#0077ff"
+              },
+              "blueA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0.6)"
+              },
+              "blueA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0.4)"
+              },
+              "blueA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0.2)"
+              },
+              "blueA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0.08)"
+              },
+              "blueA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 119, 255, 0)"
+              },
+              "sky": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#2cb1f2"
+              },
+              "skyA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0.6)"
+              },
+              "skyA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0.4)"
+              },
+              "skyA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0.2)"
+              },
+              "skyA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0.08)"
+              },
+              "skyA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(44, 177, 242, 0)"
+              },
+              "mint": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#1adbb4"
+              },
+              "mintA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0.6)"
+              },
+              "mintA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0.4)"
+              },
+              "mintA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0.2)"
+              },
+              "mintA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0.08)"
+              },
+              "mintA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(26, 219, 180, 0)"
+              },
+              "teal": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#008080"
+              },
+              "tealA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0.6)"
+              },
+              "tealA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0.4)"
+              },
+              "tealA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0.2)"
+              },
+              "tealA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0.08)"
+              },
+              "tealA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(0, 128, 128, 0)"
+              },
+              "green": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "#21a82e"
+              },
+              "greenA60": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0.6)"
+              },
+              "greenA40": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0.4)"
+              },
+              "greenA20": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0.2)"
+              },
+              "greenA8": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0.08)"
+              },
+              "greenA0": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "color",
+                "$value": "rgba(33, 168, 46, 0)"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

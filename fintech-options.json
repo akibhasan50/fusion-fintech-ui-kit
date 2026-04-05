@@ -1,0 +1,798 @@
+[
+  {
+    "Options": {
+      "modes": {
+        "Default": {
+          "Font": {
+            "General": {
+              "font-name": {
+                "$scopes": [
+                  "FONT_FAMILY"
+                ],
+                "$type": "string",
+                "$value": "Fintech Fusion"
+              },
+              "weight-400": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "Regular"
+              },
+              "weight-500": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "Medium"
+              },
+              "weight-600": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "SemiBold"
+              },
+              "weight-700": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "Bold"
+              }
+            },
+            "Accent": {
+              "font-name": {
+                "$scopes": [
+                  "FONT_FAMILY"
+                ],
+                "$type": "string",
+                "$value": "Onest"
+              },
+              "weight-500": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "Medium"
+              },
+              "weight-600": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "SemiBold"
+              },
+              "weight-700": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "Bold"
+              }
+            },
+            "Handwritten": {
+              "font-name": {
+                "$scopes": [
+                  "FONT_FAMILY"
+                ],
+                "$type": "string",
+                "$value": "Caveat"
+              },
+              "weight-400": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "Regular"
+              },
+              "weight-500": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "Medium"
+              },
+              "weight-600": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "SemiBold"
+              },
+              "weight-700": {
+                "$scopes": [
+                  "FONT_STYLE"
+                ],
+                "$type": "string",
+                "$value": "Bold"
+              }
+            }
+          },
+          "Font Size": {
+            "caption-S": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 12
+            },
+            "caption-M": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 13
+            },
+            "body-S": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 14
+            },
+            "body-M": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 16
+            },
+            "body-L": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 18
+            },
+            "title-S": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 24
+            },
+            "title-M": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 32
+            },
+            "title-L": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 40
+            },
+            "display-S": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 48
+            },
+            "display-M": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 64
+            },
+            "display-L": {
+              "$scopes": [
+                "FONT_SIZE"
+              ],
+              "$type": "float",
+              "$value": 80
+            }
+          },
+          "Font Line Height": {
+            "caption-S": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 16
+            },
+            "caption-M": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 18
+            },
+            "body-S": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 20
+            },
+            "body-M": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 22
+            },
+            "body-L": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 24
+            },
+            "title-S": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 32
+            },
+            "title-M": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 40
+            },
+            "title-L": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 48
+            },
+            "display-S": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 56
+            },
+            "display-M": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 72
+            },
+            "display-L": {
+              "$scopes": [
+                "LINE_HEIGHT"
+              ],
+              "$type": "float",
+              "$value": 88
+            }
+          },
+          "Font Letter Spacing": {
+            "2XS": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": 0
+            },
+            "XS": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": -0.5
+            },
+            "S": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": -1
+            },
+            "M": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": -1.25
+            },
+            "L": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": -2
+            },
+            "XL": {
+              "$scopes": [
+                "LETTER_SPACING"
+              ],
+              "$type": "float",
+              "$value": -2.5
+            }
+          },
+          "Spacing": {
+            "spacing-11XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 2
+            },
+            "spacing-10XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 4
+            },
+            "spacing-9XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 6
+            },
+            "spacing-8XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 8
+            },
+            "spacing-7XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 12
+            },
+            "spacing-6XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 16
+            },
+            "spacing-5XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 20
+            },
+            "spacing-4XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 24
+            },
+            "spacing-3XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 32
+            },
+            "spacing-2XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 40
+            },
+            "spacing-XS": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 48
+            },
+            "spacing-S": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 56
+            },
+            "spacing-M": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 64
+            },
+            "spacing-L": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 72
+            },
+            "spacing-XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 80
+            },
+            "spacing-2XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 96
+            },
+            "spacing-3XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 128
+            },
+            "spacing-4XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 160
+            },
+            "spacing-5XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 192
+            },
+            "spacing-6XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 224
+            },
+            "spacing-7XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 256
+            },
+            "spacing-8XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 320
+            },
+            "spacing-9XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 384
+            },
+            "spacing-10XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 448
+            },
+            "spacing-11XL": {
+              "$scopes": [
+                "GAP"
+              ],
+              "$type": "float",
+              "$value": 512
+            }
+          },
+          "Border": {
+            "border-3XS": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 1
+            },
+            "border-2XS": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 2
+            },
+            "border-XS": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 4
+            },
+            "border-S": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 6
+            },
+            "border-M": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 8
+            },
+            "border-L": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 12
+            },
+            "border-XL": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 16
+            },
+            "border-2XL": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 20
+            },
+            "border-3XL": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 24
+            },
+            "border-4XL": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 32
+            },
+            "border-5XL": {
+              "$scopes": [
+                "STROKE_FLOAT"
+              ],
+              "$type": "float",
+              "$value": 40
+            }
+          },
+          "Radius": {
+            "radius-4XS": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 1
+            },
+            "radius-3XS": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 2
+            },
+            "radius-2XS": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 4
+            },
+            "radius-XS": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 6
+            },
+            "radius-S": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 8
+            },
+            "radius-M": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 12
+            },
+            "radius-L": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 16
+            },
+            "radius-XL": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 20
+            },
+            "radius-2XL": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 24
+            },
+            "radius-3XL": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 32
+            },
+            "radius-4XL": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 48
+            },
+            "radius-5XL": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 80
+            },
+            "radius-full": {
+              "$scopes": [
+                "CORNER_RADIUS"
+              ],
+              "$type": "float",
+              "$value": 9999
+            }
+          },
+          "Opacity": {
+            "States": {
+              "hovered": {
+                "$scopes": [
+                  "OPACITY"
+                ],
+                "$type": "float",
+                "$value": 80
+              },
+              "focused": {
+                "$scopes": [
+                  "OPACITY"
+                ],
+                "$type": "float",
+                "$value": 60
+              },
+              "in-active": {
+                "$scopes": [
+                  "ALL_SCOPES"
+                ],
+                "$type": "float",
+                "$value": 40
+              },
+              "disabled": {
+                "$scopes": [
+                  "OPACITY"
+                ],
+                "$type": "float",
+                "$value": 32
+              }
+            }
+          },
+          "Dimensions": {
+            "Breakpoints": {
+              "desktop": {
+                "$scopes": [
+                  "WIDTH_HEIGHT",
+                  "FONT_VARIATIONS"
+                ],
+                "$description": "Safe Area (padding): 32px / 1.78rem",
+                "$type": "float",
+                "$value": 1200
+              },
+              "tablet-max": {
+                "$scopes": [
+                  "WIDTH_HEIGHT",
+                  "FONT_VARIATIONS"
+                ],
+                "$description": "Safe Area (padding): 16px / 0.89rem",
+                "$type": "float",
+                "$value": 1199.97998046875
+              },
+              "tablet-min": {
+                "$scopes": [
+                  "WIDTH_HEIGHT",
+                  "FONT_VARIATIONS"
+                ],
+                "$description": "Safe Area (padding): 16px / 0.89rem",
+                "$type": "float",
+                "$value": 768
+              },
+              "mobileL-max": {
+                "$scopes": [
+                  "WIDTH_HEIGHT",
+                  "FONT_VARIATIONS"
+                ],
+                "$description": "Safe Area (padding): 16px / 0.89rem",
+                "$type": "float",
+                "$value": 767.97998046875
+              },
+              "mobileL-min": {
+                "$scopes": [
+                  "WIDTH_HEIGHT",
+                  "FONT_VARIATIONS"
+                ],
+                "$description": "Safe Area (padding): 16px / 0.89rem",
+                "$type": "float",
+                "$value": 576
+              },
+              "mobileS-max": {
+                "$scopes": [
+                  "WIDTH_HEIGHT",
+                  "FONT_VARIATIONS"
+                ],
+                "$description": "Safe Area (padding): 16px / 0.89rem",
+                "$type": "float",
+                "$value": 575.97998046875
+              },
+              "mobileS-min": {
+                "$scopes": [
+                  "WIDTH_HEIGHT",
+                  "FONT_VARIATIONS"
+                ],
+                "$description": "Safe Area (padding): 16px / 0.89rem",
+                "$type": "float",
+                "$value": 360
+              }
+            }
+          },
+          "Effects": {
+            "Blur": {
+              "blur-low": {
+                "$scopes": [
+                  "EFFECT_FLOAT"
+                ],
+                "$type": "float",
+                "$value": 12
+              },
+              "blur-normal": {
+                "$scopes": [
+                  "EFFECT_FLOAT"
+                ],
+                "$type": "float",
+                "$value": 24
+              },
+              "blur-medium": {
+                "$scopes": [
+                  "EFFECT_FLOAT"
+                ],
+                "$type": "float",
+                "$value": 48
+              },
+              "blur-high": {
+                "$scopes": [
+                  "EFFECT_FLOAT"
+                ],
+                "$type": "float",
+                "$value": 96
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+]

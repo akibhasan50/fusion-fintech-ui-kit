@@ -1,0 +1,138 @@
+/* =============================================
+   COMPONENTS/SELECT/select.css
+   Single-base Custom Select – Fintech UI Kit
+   ============================================= */
+
+.select {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+}
+
+/* Select Button (Header) */
+.select__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 48px;
+    padding: 0 var(--spacing-xs);
+    background-color: var(--color-surface-low-2);
+    border: var(--border-2xs) solid var(--color-gray-base-regular);
+    border-radius: var(--radius-m);
+    cursor: pointer;
+    font-family: var(--font-general-font-name);
+    font-size: var(--font-size-body-m);
+    color: var(--color-black-inverse);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .select__button {
+    background-color: var(--color-surface-medium);
+}
+
+.select__button:hover {
+    border-color: var(--color-accent-base-accent-primary);
+}
+
+.select__button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+    border-color: var(--color-accent-base-accent-primary);
+}
+
+/* Chevron Icon */
+.select__chevron {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.select[data-state="open"] .select__chevron {
+    transform: rotate(180deg);
+}
+
+/* Options List */
+.select__options {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    max-height: 240px;
+    background-color: var(--color-surface-low-2);
+    border: var(--border-3xs) solid var(--color-gray-base-extra);
+    border-radius: var(--radius-m);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+    overflow-y: auto;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .select__options {
+    background-color: var(--color-surface-low-1);
+    border-color: var(--color-gray-base-dark);
+}
+
+.select[data-state="open"] .select__options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Option Item */
+.select__option {
+    padding: 10px 12px;
+    border-radius: var(--radius-s);
+    cursor: pointer;
+    font-size: var(--font-size-body-s);
+    color: var(--color-black-base);
+    transition: background 0.15s ease;
+}
+
+.dark .select__option {
+    color: var(--color-black-inverse);
+}
+
+.select__option:hover {
+    background-color: var(--color-gray-base-ultra);
+}
+
+.dark .select__option:hover {
+    background-color: var(--color-gray-base-extra);
+}
+
+.select__option[data-selected="true"] {
+    background-color: var(--color-accent-base-accent-primary-a8);
+    color: var(--color-accent-base-accent-primary);
+    font-weight: var(--font-general-weight-600);
+}
+
+/* ============== SIZES ============== */
+
+.select[data-size="small"] .select__button {
+    min-height: 36px;
+    font-size: var(--font-size-caption-m);
+}
+
+.select[data-size="large"] .select__button {
+    min-height: 56px;
+    font-size: var(--font-size-body-l);
+}
+
+/* ============== DISABLED STATE ============== */
+
+.select[data-disabled="true"] {
+    opacity: var(--opacity-states-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.select[data-disabled="true"] .select__button {
+    background-color: var(--color-gray-base-ultra);
+}

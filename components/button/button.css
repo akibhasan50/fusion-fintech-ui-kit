@@ -1,0 +1,203 @@
+/* =============================================
+   COMPONENTS/BUTTON/button.css
+   Single-base Button – Fintech UI Kit
+   All variants & states via data-* attributes
+   ============================================= */
+
+.button {
+    /* Base reset */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2xs);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-general-font-name);
+    font-weight: var(--font-general-weight-600);
+    border-radius: var(--radius-m);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* ============== SIZES ============== */
+.button[data-size="small"] {
+    font-size: var(--font-size-caption-m);
+    line-height: var(--line-height-caption-m);
+    padding: 8px 16px;
+    min-height: 36px;
+}
+
+.button[data-size="medium"] {
+    font-size: var(--font-size-body-m);
+    line-height: var(--line-height-body-m);
+    padding: 12px 24px;
+    min-height: 48px;
+}
+
+.button[data-size="large"] {
+    font-size: var(--font-size-body-l);
+    line-height: var(--line-height-body-l);
+    padding: 16px 32px;
+    min-height: 56px;
+}
+
+/* ============== VARIANTS ============== */
+
+/* Primary */
+.button[data-variant="primary"] {
+    background-color: var(--color-accent-base-accent-primary);
+    color: #ffffff;
+}
+
+.button[data-variant="primary"]:hover {
+    background-color: color-mix(in srgb, var(--color-accent-base-accent-primary) 90%, #000);
+}
+
+.button[data-variant="primary"]:focus-visible {
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+/* Secondary */
+.button[data-variant="secondary"] {
+    background-color: var(--color-gray-base-medium);
+    color: var(--color-black-base);
+}
+
+.button[data-variant="secondary"]:hover {
+    background-color: var(--color-gray-base-regular);
+}
+
+/* Outline */
+.button[data-variant="outline"] {
+    background-color: transparent;
+    border: var(--border-2xs) solid var(--color-accent-base-accent-primary);
+    color: var(--color-accent-base-accent-primary);
+}
+
+.button[data-variant="outline"]:hover {
+    background-color: var(--color-accent-base-accent-primary-a8);
+}
+
+/* Ghost */
+.button[data-variant="ghost"] {
+    background-color: transparent;
+    color: var(--color-black-base);
+}
+
+.button[data-variant="ghost"]:hover {
+    background-color: var(--color-gray-base-extra);
+}
+
+/* Destructive */
+.button[data-variant="destructive"] {
+    background-color: var(--color-accent-base-accent-danger);
+    color: #ffffff;
+}
+
+.button[data-variant="destructive"]:hover {
+    background-color: color-mix(in srgb, var(--color-accent-base-accent-danger) 90%, #000);
+}
+
+/* Success */
+.button[data-variant="success"] {
+    background-color: var(--color-accent-base-accent-success);
+    color: #ffffff;
+}
+
+/* Warning */
+.button[data-variant="warning"] {
+    background-color: var(--color-accent-base-accent-warning);
+    color: #ffffff;
+}
+
+/* ============== ICONS ============== */
+.button__icon {
+    display: none;
+    font-size: 1.25em;
+    width: 1.25em;
+    height: 1.25em;
+    align-items: center;
+    justify-content: center;
+}
+
+.button[data-icon="left"] .button__icon,
+.button[data-icon="right"] .button__icon,
+.button[data-icon="only"] .button__icon {
+    display: inline-flex;
+}
+
+.button[data-icon="right"] {
+    flex-direction: row-reverse;
+}
+
+/* Icon-only */
+.button[data-icon="only"] .button__label {
+    display: none;
+}
+
+/* ============== BADGE ============== */
+.button__badge {
+    display: none;
+    background-color: var(--color-accent-base-accent-danger);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: var(--font-general-weight-700);
+    line-height: 1;
+    padding: 2px 6px;
+    border-radius: var(--radius-full);
+    margin-left: 8px;
+}
+
+.button[data-badge="true"] .button__badge {
+    display: inline-flex;
+}
+
+/* ============== LOADING STATE ============== */
+.button__loader {
+    display: none;
+    animation: spin 1s linear infinite;
+    margin-right: 8px;
+}
+
+.button[data-loading="true"] .button__label,
+.button[data-loading="true"] .button__icon,
+.button[data-loading="true"] .button__badge {
+    opacity: 0;
+}
+
+.button[data-loading="true"] .button__loader {
+    display: inline-block;
+}
+
+/* Loader SVG icon */
+.button__loader::before {
+    content: "⟳";
+    font-size: 18px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============== DISABLED STATE ============== */
+.button[data-disabled="true"],
+.button[data-disabled="true"]:hover,
+.button[data-disabled="true"]:focus-visible {
+    opacity: var(--opacity-states-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* ============== DARK MODE ADJUSTMENTS ============== */
+.dark .button[data-variant="secondary"],
+.dark .button[data-variant="ghost"] {
+    color: var(--color-black-inverse);
+}

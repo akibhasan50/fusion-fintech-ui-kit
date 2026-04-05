@@ -1,0 +1,134 @@
+/* =============================================
+   COMPONENTS/CHECKBOX/checkbox.css
+   Single-base Checkbox – Fintech UI Kit
+   ============================================= */
+
+.checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    gap: var(--spacing-3xs);
+    transition: opacity 0.2s ease;
+}
+
+/* Hidden native input */
+.checkbox__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Custom Checkbox Box */
+.checkbox__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-surface-low-2);
+    border: var(--border-3xs) solid var(--color-gray-base-regular);
+    border-radius: var(--radius-xs);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+}
+
+.dark .checkbox__box {
+    background-color: var(--color-surface-medium);
+}
+
+.checkbox__label {
+    font-size: var(--font-size-body-s);
+    color: var(--color-black-base);
+    font-family: var(--font-general-font-name);
+}
+
+.dark .checkbox__label {
+    color: var(--color-black-inverse);
+}
+
+/* ============== STATES ============== */
+
+/* Checked state */
+.checkbox__input:checked ~ .checkbox__box {
+    background-color: var(--color-accent-base-accent-primary);
+    border-color: var(--color-accent-base-accent-primary);
+}
+
+/* Check icon (SVG inside .checkbox__box) */
+.checkbox__icon {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.checkbox__input:checked ~ .checkbox__box .checkbox__icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hover shadow */
+.checkbox:hover .checkbox__box {
+    border-color: var(--color-accent-base-accent-primary);
+    box-shadow: 0 0 0 4px var(--color-accent-base-accent-primary-a8);
+}
+
+/* Focus state */
+.checkbox__input:focus-visible ~ .checkbox__box {
+    box-shadow: 0 0 0 4px var(--color-accent-base-accent-primary-a20);
+    border-color: var(--color-accent-base-accent-primary);
+}
+
+/* ============== SIZES ============== */
+
+.checkbox[data-size="small"] .checkbox__box {
+    height: 16px;
+    width: 16px;
+}
+
+.checkbox[data-size="small"] .checkbox__icon {
+    width: 10px;
+    height: 10px;
+}
+
+.checkbox[data-size="large"] .checkbox__box {
+    height: 24px;
+    width: 24px;
+}
+
+.checkbox[data-size="large"] .checkbox__icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* ============== ERROR STATE ============== */
+
+.checkbox[data-error="true"] .checkbox__box {
+    border-color: var(--color-accent-base-accent-danger);
+}
+
+.checkbox[data-error="true"] .checkbox__label {
+    color: var(--color-accent-base-accent-danger);
+}
+
+/* ============== DISABLED STATE ============== */
+
+.checkbox[data-disabled="true"] {
+    opacity: var(--opacity-states-disabled);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.checkbox[data-disabled="true"] .checkbox__box {
+    background-color: var(--color-gray-base-ultra);
+}

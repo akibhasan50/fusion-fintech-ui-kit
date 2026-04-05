@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider - Fintech UI Kit</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="slider.css">
+    <style>
+        .demo-container {
+            padding: 48px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .demo-section {
+            margin-bottom: 64px;
+        }
+
+        .demo-title {
+            font-size: 24px;
+            margin-bottom: 24px;
+            color: var(--color-black-base);
+        }
+
+        .dark .demo-title {
+            color: var(--color-white-base);
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+
+        .value-display {
+            font-size: 32px;
+            font-weight: var(--font-general-weight-700);
+            color: var(--color-accent-base-accent-primary);
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-container">
+        <h1 class="demo-title">Slider Component</h1>
+
+        <!-- Sizes -->
+        <div class="demo-section">
+            <h2 class="demo-title">Sizes</h2>
+            <div class="demo-grid">
+
+                <div class="slider" data-size="small">
+                    <label class="slider__label">Small Slider</label>
+                    <div class="slider__track-container">
+                        <input type="range" class="slider__input" min="0" max="100" value="20">
+                        <div class="slider__track"></div>
+                        <div class="slider__fill" style="width: 20%;"></div>
+                        <div class="slider__thumb" style="left: 20%;"></div>
+                    </div>
+                </div>
+
+                <div class="slider" data-size="medium">
+                    <label class="slider__label">Medium Slider (Default)</label>
+                    <div class="slider__track-container">
+                        <input type="range" class="slider__input" min="0" max="100" value="50">
+                        <div class="slider__track"></div>
+                        <div class="slider__fill" style="width: 50%;"></div>
+                        <div class="slider__thumb" style="left: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="slider" data-size="large">
+                    <label class="slider__label">Large Slider</label>
+                    <div class="slider__track-container">
+                        <input type="range" class="slider__input" min="0" max="100" value="80">
+                        <div class="slider__track"></div>
+                        <div class="slider__fill" style="width: 80%;"></div>
+                        <div class="slider__thumb" style="left: 80%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Interactive Example -->
+        <div class="demo-section">
+            <h2 class="demo-title">Loan Amount Calculator</h2>
+            <div class="demo-grid"
+                style="background: var(--color-surface-low-2); padding: 32px; border-radius: var(--radius-l); border: 1px solid var(--color-gray-base-extra);">
+                <div class="value-display" id="loan-value">$5,000</div>
+                <div class="slider" id="loan-slider">
+                    <label class="slider__label">How much do you need?</label>
+                    <div class="slider__track-container">
+                        <input type="range" class="slider__input" min="1000" max="10000" step="500" value="5000">
+                        <div class="slider__track"></div>
+                        <div class="slider__fill"></div>
+                        <div class="slider__thumb"></div>
+                    </div>
+                    <div class="slider__values">
+                        <span>$1,000</span>
+                        <span>$10,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- States -->
+        <div class="demo-section">
+            <h2 class="demo-title">States</h2>
+            <div class="demo-grid">
+                <div class="slider" data-disabled="true">
+                    <label class="slider__label">Disabled Slider</label>
+                    <div class="slider__track-container">
+                        <input type="range" class="slider__input" disabled value="40">
+                        <div class="slider__track"></div>
+                        <div class="slider__fill" style="width: 40%;"></div>
+                        <div class="slider__thumb" style="left: 40%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../scripts/theme-sync.js"></script>
+    <script>
+        // Slider logic
+        function updateSlider(sliderEl) {
+            const input = sliderEl.querySelector('.slider__input');
+            const fill = sliderEl.querySelector('.slider__fill');
+            const thumb = sliderEl.querySelector('.slider__thumb');
+            const min = input.getAttribute('min') || 0;
+            const max = input.getAttribute('max') || 100;
+            const value = input.value;
+            const percent = ((value - min) / (max - min)) * 100;
+
+            if (fill) fill.style.width = percent + '%';
+            if (thumb) thumb.style.left = percent + '%';
+
+            return value;
+        }
+
+        // Initialize all sliders
+        document.querySelectorAll('.slider').forEach(slider => {
+            const input = slider.querySelector('.slider__input');
+            if (input) {
+                updateSlider(slider);
+                input.addEventListener('input', () => {
+                    const val = updateSlider(slider);
+                    if (slider.id === 'loan-slider') {
+                        document.getElementById('loan-value').textContent = '$' + Number(val).toLocaleString();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+/* =============================================
+   COMPONENTS/CARD/card.css
+   Single-base Card / Surface – Fintech UI Kit
+   ============================================= */
+
+.card {
+    background-color: var(--color-surface-low-2);
+    border-radius: var(--radius-l);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    width: 100%;
+    padding: var(--spacing-xs);
+}
+
+/* Dark mode */
+.dark .card {
+    background-color: var(--color-surface-medium);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ============== VARIANTS ============== */
+.card[data-variant="default"] {
+    border: var(--border-2xs) solid var(--color-gray-base-extra);
+}
+
+.card[data-variant="elevated"] {
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.1);
+}
+
+.dark .card[data-variant="elevated"] {
+    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+}
+
+.card[data-variant="bordered"] {
+    border: var(--border-2xs) solid var(--color-accent-base-accent-primary);
+}
+
+/* ============== SIZES ============== */
+.card[data-size="small"] {
+    padding: var(--spacing-3xs);
+}
+
+.card[data-size="medium"] {
+    padding: var(--spacing-xs);
+}
+
+.card[data-size="large"] {
+    padding: var(--spacing-s);
+}
+
+/* ============== INTERNAL STRUCTURE ============== */
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-2xs);
+}
+
+.card__title {
+    font-size: var(--font-size-body-m);
+    font-weight: var(--font-general-weight-600);
+    color: var(--color-black-base);
+}
+
+.dark .card__title {
+    color: var(--color-black-inverse);
+}
+
+.card__subtitle {
+    font-size: var(--font-size-caption-m);
+    color: var(--color-gray-base-regular);
+}
+
+.card__content {
+    color: var(--color-black-base);
+    font-size: var(--font-size-body-m);
+    line-height: var(--line-height-body-m);
+}
+
+.dark .card__content {
+    color: var(--color-black-inverse);
+}
+
+.card__footer {
+    margin-top: var(--spacing-xs);
+    padding-top: var(--spacing-xs);
+    border-top: var(--border-3xs) solid var(--color-gray-base-extra);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Hover effect */
+.card[data-hover="true"]:hover,
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.15);
+}
+
+/* Optional divider inside card */
+.card__divider {
+    height: 1px;
+    background: var(--color-gray-base-extra);
+    margin: var(--spacing-2xs) 0;
+}

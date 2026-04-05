@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation & Tabs - Fintech UI Kit</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="navigation.css">
+    <style>
+        .demo-container {
+            padding: 48px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .demo-section {
+            margin-bottom: 64px;
+        }
+        .demo-title {
+            font-size: 24px;
+            margin-bottom: 32px;
+            color: var(--color-black-inverse);
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1 class="demo-title">Navigation & Tabs</h1>
+
+        <!-- Underline Variant -->
+        <div class="demo-section">
+            <h2 class="demo-title">Underline (Standard Navbar)</h2>
+            <nav class="nav" data-variant="underline">
+                <ul class="nav__list">
+                    <li class="nav__item" data-state="active"><a href="#" class="nav__link">Dashboard</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Transactions</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Wallet</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Crypto</a></li>
+                    <li class="nav__item" data-disabled="true"><a href="#" class="nav__link">Advanced</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Pills Variant -->
+        <div class="demo-section">
+            <h2 class="demo-title">Pills (Switching Contexts)</h2>
+            <nav class="nav" data-variant="pills" data-size="medium">
+                <ul class="nav__list">
+                    <li class="nav__item" data-state="active"><a href="#" class="nav__link">All Accounts</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Savings</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Investment</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Vertical Sidebar -->
+        <div class="demo-section">
+            <h2 class="demo-title">Vertical Sidebar (Underline)</h2>
+            <div style="display: flex; gap: 48px;">
+                <nav class="nav" data-variant="underline" data-vertical="true">
+                    <ul class="nav__list">
+                        <li class="nav__item" data-state="active"><a href="#" class="nav__link">Account Overview</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Personal Info</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Security</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Notifications</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Vertical Pills -->
+                <nav class="nav" data-variant="pills" data-vertical="true">
+                    <ul class="nav__list">
+                        <li class="nav__item" data-state="active"><a href="#" class="nav__link">Dashboard</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Messages</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Settings</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Sizes -->
+        <div class="demo-section">
+            <h2 class="demo-title">Sizes (Pills Variant)</h2>
+            <div class="demo-grid" style="gap: 24px;">
+                <nav class="nav" data-variant="pills" data-size="small">
+                    <ul class="nav__list">
+                        <li class="nav__item" data-state="active"><a href="#" class="nav__link">Small Active</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Inactive</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="nav" data-variant="pills" data-size="medium">
+                    <ul class="nav__list">
+                        <li class="nav__item" data-state="active"><a href="#" class="nav__link">Medium Active</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Inactive</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="nav" data-variant="pills" data-size="large">
+                    <ul class="nav__list">
+                        <li class="nav__item" data-state="active"><a href="#" class="nav__link">Large Active</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Inactive</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../scripts/theme-sync.js"></script>
+    <script>
+        // Simple tab switching logic for demo
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const parentNav = link.closest('.nav');
+                if (parentNav) {
+                    parentNav.querySelectorAll('.nav__item').forEach(item => {
+                        item.setAttribute('data-state', '');
+                    });
+                    link.closest('.nav__item').setAttribute('data-state', 'active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+/* =============================================
+   COMPONENTS/BADGE/badge.css
+   Single-base Badge / Tag – Fintech UI Kit
+   ============================================= */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-3xs);
+    font-family: var(--font-general-font-name);
+    font-weight: var(--font-general-weight-600);
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    cursor: default;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============== SIZES ============== */
+.badge[data-size="small"] {
+    font-size: var(--font-size-caption-s);
+    padding: 2px 12px;
+    line-height: 16px;
+}
+
+.badge[data-size="medium"] {
+    font-size: var(--font-size-caption-m);
+    padding: 4px 16px;
+    line-height: 20px;
+}
+
+/* ============== VARIANTS ============== */
+.badge[data-variant="primary"] {
+    background-color: var(--color-accent-base-accent-primary);
+    color: #ffffff;
+}
+
+.badge[data-variant="secondary"] {
+    background-color: var(--color-gray-base-medium);
+    color: var(--color-black-base);
+}
+
+.dark .badge[data-variant="secondary"] {
+    color: var(--color-black-inverse);
+}
+
+.badge[data-variant="outline"] {
+    background-color: transparent;
+    border: var(--border-2xs) solid var(--color-accent-base-accent-primary);
+    color: var(--color-accent-base-accent-primary);
+}
+
+.badge[data-variant="success"] {
+    background-color: var(--color-accent-base-accent-success);
+    color: #ffffff;
+}
+
+.badge[data-variant="danger"] {
+    background-color: var(--color-accent-base-accent-danger);
+    color: #ffffff;
+}
+
+.badge[data-variant="warning"] {
+    background-color: var(--color-accent-base-accent-warning);
+    color: #ffffff;
+}
+
+/* ============== ICON & DISMISS ============== */
+.badge__icon {
+    font-size: 1.1em;
+    line-height: 1;
+}
+
+.badge__dismiss {
+    background: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1;
+    padding: 0 4px;
+    margin-left: var(--spacing-3xs);
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.badge__dismiss:hover {
+    opacity: 1;
+}
+
+/* Hover effect (non-dismissible badges) */
+.badge:not([data-dismissible="true"]):hover {
+    transform: scale(1.05);
+}
+
+/* Dark mode fine-tuning */
+.dark .badge[data-variant="outline"] {
+    color: var(--color-accent-base-accent-primary);
+}

@@ -1,0 +1,127 @@
+/* =============================================
+   Fintech UI Kit – Global Styles
+   Imports all design tokens + base resets
+   ============================================= */
+
+@import "../tokens/tokens.css";
+
+/* ============== RESET & BASE STYLES ============== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    /* Base font size for rem calculations */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-general-font-name);
+    font-weight: var(--font-general-weight-400);
+    line-height: 1.5;
+    color: var(--color-black-inverse);
+    background-color: var(--color-background-bg-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============== DARK MODE ============== */
+.dark body {
+    color: var(--color-black-inverse);
+    background-color: var(--color-background-bg-base);
+}
+
+/* ============== TYPOGRAPHY BASE ============== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-general-font-name);
+    font-weight: var(--font-general-weight-600);
+    line-height: 1.2;
+}
+
+p,
+span,
+label,
+button,
+input,
+textarea,
+select {
+    font-family: var(--font-general-font-name);
+}
+
+/* Accent font for special elements (optional) */
+.font-accent {
+    font-family: var(--font-accent-font-name);
+}
+
+/* ============== UTILITY CLASSES ============== */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Smooth transitions for all interactive elements */
+button,
+input,
+select,
+textarea,
+[role="button"],
+[data-variant] {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============== FOCUS STYLES (accessibility) ============== */
+*:focus-visible {
+    outline: 2px solid var(--color-accent-base-accent-primary);
+    outline-offset: 2px;
+}
+
+/* ============== SCROLLBAR (optional polish) ============== */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-gray-base-regular);
+    border-radius: var(--radius-2xs);
+}
+
+/* ============== RESPONSIVE HELPER ============== */
+@media (max-width: var(--dimensions-breakpoints-tablet-max)) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: var(--dimensions-breakpoints-mobile-l-max)) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* ============== DEMO DASHBOARD OVERRIDES ============== */
+/* Hide individual component dark mode toggles since app has a global one */
+.demo-header div:has(input[type="checkbox"]),
+.demo-header label,
+.demo-header input[type="checkbox"],
+#dark-toggle,
+#darkModeToggle {
+    display: none !important;
+}

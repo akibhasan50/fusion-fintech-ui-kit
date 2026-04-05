@@ -1,0 +1,139 @@
+<!-- =============================================
+     COMPONENTS/BADGE/index.html
+     Badge / Tag Component – Full Demo
+     ============================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech UI Kit • Badge</title>
+
+    <link rel="stylesheet" href="../../tokens/tokens.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="badge.css">
+
+    <style>
+        .demo {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .demo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--color-gray-base-regular);
+            padding-bottom: 20px;
+        }
+
+        .demo-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .demo-card {
+            background: var(--color-surface-low-2);
+            border-radius: var(--radius-m);
+            padding: 32px;
+            border: 1px solid var(--color-gray-base-extra);
+        }
+
+        .dark .demo-card {
+            background: var(--color-surface-medium);
+        }
+
+        .badge-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body class="demo">
+    <div class="demo-header">
+        <h1 style="font-size: var(--font-size-title-m);">Badge / Tag Component</h1>
+    </div>
+
+    <div class="demo-grid">
+
+        <!-- 1. All Variants -->
+        <div class="demo-card">
+            <h3 style="margin-bottom: 16px;">All Variants (Medium size)</h3>
+            <div class="badge-group">
+                <div class="badge" data-variant="primary">Primary</div>
+                <div class="badge" data-variant="secondary">Secondary</div>
+                <div class="badge" data-variant="outline">Outline</div>
+                <div class="badge" data-variant="success">Success</div>
+                <div class="badge" data-variant="danger">Danger</div>
+                <div class="badge" data-variant="warning">Warning</div>
+            </div>
+        </div>
+
+        <!-- 2. Sizes -->
+        <div class="demo-card">
+            <h3 style="margin-bottom: 16px;">Sizes</h3>
+            <div class="badge-group">
+                <div class="badge" data-variant="primary" data-size="small">Small</div>
+                <div class="badge" data-variant="primary" data-size="medium">Medium</div>
+            </div>
+        </div>
+
+        <!-- 3. With Icon + Dismissible -->
+        <div class="demo-card">
+            <h3 style="margin-bottom: 16px;">With Icon &amp; Dismissible</h3>
+            <div class="badge-group">
+                <div class="badge" data-variant="success" data-icon="true">
+                    <span class="badge__icon">✓</span>
+                    Verified
+                </div>
+                <div class="badge" data-variant="danger" data-dismissible="true">
+                    Overdue
+                    <button class="badge__dismiss">×</button>
+                </div>
+                <div class="badge" data-variant="warning" data-icon="true" data-dismissible="true">
+                    <span class="badge__icon">!</span>
+                    Pending
+                    <button class="badge__dismiss">×</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Usage inside Card example -->
+        <div class="demo-card">
+            <h3 style="margin-bottom: 16px;">Inside Card (real usage)</h3>
+            <div class="card" data-size="medium" data-variant="default" style="max-width: 380px;">
+                <div class="card__header">
+                    <h4 class="card__title">Invoice #3921</h4>
+                    <div class="badge" data-variant="success" data-size="small">Paid</div>
+                </div>
+                <div class="card__content">Due in 3 days • $1,250</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../scripts/theme-sync.js"></script>
+    <script>
+        // Demo dismiss functionality
+        document.querySelectorAll('.badge__dismiss').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const badge = btn.closest('.badge');
+                badge.style.transition = 'all 0.3s';
+                badge.style.opacity = '0';
+                badge.style.transform = 'scale(0.8)';
+                setTimeout(() => badge.remove(), 300);
+            });
+        });
+    </script>
+</body>
+
+</html>

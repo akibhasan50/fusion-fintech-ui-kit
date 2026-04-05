@@ -1,0 +1,144 @@
+/* =============================================
+   COMPONENTS/NAVIGATION/navigation.css
+   Single-base Navigation & Tabs – Fintech UI Kit
+   ============================================= */
+
+.nav {
+    display: inline-flex;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: var(--spacing-xs);
+    align-items: center;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: var(--color-gray-base-regular);
+    font-family: var(--font-general-font-name);
+    font-weight: var(--font-general-weight-600);
+    font-size: var(--font-size-body-m);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: var(--radius-s);
+}
+
+.dark .nav__link {
+    color: var(--color-gray-base-normal);
+}
+
+.nav__link:hover {
+    color: var(--color-accent-base-accent-primary);
+    background-color: var(--color-accent-base-accent-primary-a8);
+}
+
+/* ============== VARIANTS ============== */
+
+/* UNDERLINE VARIANT */
+.nav[data-variant="underline"] .nav__list {
+    gap: var(--spacing-m);
+}
+
+.nav[data-variant="underline"] .nav__link {
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent !important;
+}
+
+.nav[data-variant="underline"] .nav__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent-base-accent-primary);
+    transition: width 0.3s ease;
+}
+
+.nav[data-variant="underline"] .nav__item[data-state="active"]::after {
+    width: 100%;
+}
+
+.nav[data-variant="underline"] .nav__item[data-state="active"] .nav__link {
+    color: var(--color-accent-base-accent-primary);
+}
+
+/* PILLS VARIANT */
+.nav[data-variant="pills"] .nav__list {
+    background-color: var(--color-surface-low-2);
+    padding: 4px;
+    border-radius: var(--radius-m);
+}
+
+.dark .nav[data-variant="pills"] .nav__list {
+    background-color: var(--color-surface-medium);
+}
+
+.nav[data-variant="pills"] .nav__item[data-state="active"] .nav__link {
+    background-color: var(--color-accent-base-accent-primary);
+    color: #ffffff;
+    box-shadow: 0 4px 12px var(--color-accent-base-accent-primary-a20);
+}
+
+/* GHOST VARIANT */
+.nav[data-variant="ghost"] .nav__item[data-state="active"] .nav__link {
+    background-color: var(--color-gray-base-ultra);
+    color: var(--color-black-inverse);
+}
+
+.dark .nav[data-variant="ghost"] .nav__item[data-state="active"] .nav__link {
+    background-color: var(--color-gray-base-dark);
+}
+
+/* ============== SIZES ============== */
+
+.nav[data-size="small"] .nav__link {
+    padding: 8px 12px;
+    font-size: var(--font-size-caption-m);
+}
+
+.nav[data-size="large"] .nav__link {
+    padding: 16px 24px;
+    font-size: var(--font-size-body-l);
+}
+
+/* ============== VERTICAL MODE ============== */
+
+.nav[data-vertical="true"] .nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    width: 240px;
+}
+
+.nav[data-vertical="true"][data-variant="underline"] .nav__item::after {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+}
+
+.nav[data-vertical="true"][data-variant="underline"] .nav__item[data-state="active"]::after {
+    height: 100%;
+    width: 2px;
+}
+
+/* ============== DISABLED STATE ============== */
+
+.nav__item[data-disabled="true"] {
+    opacity: var(--opacity-states-disabled);
+    pointer-events: none;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox - Fintech UI Kit</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="checkbox.css">
+    <style>
+        .demo-container {
+            padding: 48px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .demo-section {
+            margin-bottom: 48px;
+        }
+
+        .demo-title {
+            font-size: 24px;
+            margin-bottom: 24px;
+            color: var(--color-black-base);
+        }
+
+        .dark .demo-title {
+            color: var(--color-white-base);
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 24px;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="demo-container">
+        <h1 class="demo-title">Checkbox Component</h1>
+
+        <!-- Sizes -->
+        <div class="demo-section">
+            <h2 class="demo-title">Sizes</h2>
+            <div class="demo-grid">
+                <label class="checkbox" data-size="small">
+                    <input type="checkbox" class="checkbox__input">
+                    <span class="checkbox__box">
+                        <svg class="checkbox__icon" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17L4 12"></path>
+                        </svg>
+                    </span>
+                    <span class="checkbox__label">Small Checkbox</span>
+                </label>
+
+                <label class="checkbox" data-size="medium">
+                    <input type="checkbox" class="checkbox__input" checked>
+                    <span class="checkbox__box">
+                        <svg class="checkbox__icon" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17L4 12"></path>
+                        </svg>
+                    </span>
+                    <span class="checkbox__label">Medium (Checked)</span>
+                </label>
+
+                <label class="checkbox" data-size="large">
+                    <input type="checkbox" class="checkbox__input">
+                    <span class="checkbox__box">
+                        <svg class="checkbox__icon" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17L4 12"></path>
+                        </svg>
+                    </span>
+                    <span class="checkbox__label">Large Checkbox</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Variants / States -->
+        <div class="demo-section">
+            <h2 class="demo-title">States</h2>
+            <div class="demo-grid">
+                <label class="checkbox" data-disabled="true">
+                    <input type="checkbox" class="checkbox__input">
+                    <span class="checkbox__box">
+                        <svg class="checkbox__icon" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17L4 12"></path>
+                        </svg>
+                    </span>
+                    <span class="checkbox__label">Disabled</span>
+                </label>
+
+                <label class="checkbox" data-disabled="true">
+                    <input type="checkbox" class="checkbox__input" checked>
+                    <span class="checkbox__box">
+                        <svg class="checkbox__icon" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17L4 12"></path>
+                        </svg>
+                    </span>
+                    <span class="checkbox__label">Disabled (Checked)</span>
+                </label>
+
+                <label class="checkbox" data-error="true">
+                    <input type="checkbox" class="checkbox__input">
+                    <span class="checkbox__box">
+                        <svg class="checkbox__icon" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17L4 12"></path>
+                        </svg>
+                    </span>
+                    <span class="checkbox__label">Error State</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Live Example -->
+        <div class="demo-section">
+            <h2 class="demo-title">Interactivity Test</h2>
+            <div class="demo-grid">
+                <label class="checkbox" id="interactive-checkbox">
+                    <input type="checkbox" class="checkbox__input">
+                    <span class="checkbox__box">
+                        <svg class="checkbox__icon" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17L4 12"></path>
+                        </svg>
+                    </span>
+                    <span class="checkbox__label">Try clicking me</span>
+                </label>
+            </div>
+            <p id="checkbox-status" style="margin-top: 16px; color: var(--color-gray-base-regular);">Status: Unchecked
+            </p>
+        </div>
+    </div>
+
+    <script src="../../scripts/theme-sync.js"></script>
+    <script>
+        // Interactive test logic
+        const interactiveCheckbox = document.querySelector('#interactive-checkbox .checkbox__input');
+        const statusText = document.getElementById('checkbox-status');
+
+        interactiveCheckbox.addEventListener('change', () => {
+            statusText.textContent = `Status: ${interactiveCheckbox.checked ? 'Checked' : 'Unchecked'}`;
+            statusText.style.color = interactiveCheckbox.checked ? 'var(--color-accent-base-accent-primary)' : 'var(--color-gray-base-regular)';
+        });
+    </script>
+</body>
+
+</html>

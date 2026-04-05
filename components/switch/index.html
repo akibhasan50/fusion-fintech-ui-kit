@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch / Toggle - Fintech UI Kit</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="switch.css">
+    <style>
+        .demo-container {
+            padding: 48px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .demo-section {
+            margin-bottom: 48px;
+        }
+
+        .demo-title {
+            font-size: 24px;
+            margin-bottom: 24px;
+            color: var(--color-black-base);
+        }
+
+        .dark .demo-title {
+            color: var(--color-white-base);
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 24px;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--color-surface-low-2);
+            padding: 8px 16px;
+            border-radius: var(--radius-full);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="demo-container">
+        <h1 class="demo-title">Switch / Toggle Component</h1>
+
+        <!-- Sizes -->
+        <div class="demo-section">
+            <h2 class="demo-title">Sizes</h2>
+            <div class="demo-grid">
+                <label class="switch" data-size="small">
+                    <input type="checkbox" class="switch__input">
+                    <span class="switch__track">
+                        <span class="switch__knob"></span>
+                    </span>
+                    <span class="switch__label">Small Toggle</span>
+                </label>
+
+                <label class="switch" data-size="medium">
+                    <input type="checkbox" class="switch__input" checked>
+                    <span class="switch__track">
+                        <span class="switch__knob"></span>
+                    </span>
+                    <span class="switch__label">Medium (On)</span>
+                </label>
+
+                <label class="switch" data-size="large">
+                    <input type="checkbox" class="switch__input">
+                    <span class="switch__track">
+                        <span class="switch__knob"></span>
+                    </span>
+                    <span class="switch__label">Large Toggle</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Variants / States -->
+        <div class="demo-section">
+            <h2 class="demo-title">States</h2>
+            <div class="demo-grid">
+                <label class="switch" data-disabled="true">
+                    <input type="checkbox" class="switch__input">
+                    <span class="switch__track">
+                        <span class="switch__knob"></span>
+                    </span>
+                    <span class="switch__label">Disabled Off</span>
+                </label>
+
+                <label class="switch" data-disabled="true">
+                    <input type="checkbox" class="switch__input" checked>
+                    <span class="switch__track">
+                        <span class="switch__knob"></span>
+                    </span>
+                    <span class="switch__label">Disabled On</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Live Example -->
+        <div class="demo-section">
+            <h2 class="demo-title">Settings Example</h2>
+            <div class="demo-grid" style="grid-template-columns: 1fr;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; padding: 16px; background: var(--color-surface-low-2); border-radius: var(--radius-m); border: 1px solid var(--color-gray-base-extra);">
+                    <div>
+                        <h4 style="margin: 0; color: var(--color-black-base);">Push Notifications</h4>
+                        <p style="margin: 4px 0 0; font-size: 13px; color: var(--color-gray-base-regular);">Receive
+                            updates about your account</p>
+                    </div>
+                    <label class="switch" data-size="medium">
+                        <input type="checkbox" class="switch__input" checked>
+                        <span class="switch__track">
+                            <span class="switch__knob"></span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../scripts/theme-sync.js"></script>
+</body>
+
+</html>
