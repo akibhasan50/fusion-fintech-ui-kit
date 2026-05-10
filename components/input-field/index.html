@@ -51,7 +51,35 @@
             display: flex;
             flex-direction: column;
             gap: 24px;
-            max-width: 420px;
+            width: 100%;
+            max-width: 520px;
+        }
+
+        @media (max-width: 768px) {
+            .demo {
+                padding: 16px;
+            }
+
+            .demo-grid {
+                gap: 20px;
+            }
+
+            .demo-card {
+                padding: 20px 14px;
+            }
+
+            .variant-group {
+                gap: 16px;
+            }
+
+            h3 {
+                font-size: 22px;
+                margin-bottom: 12px !important;
+            }
+
+            .input-field__label {
+                margin-bottom: 6px;
+            }
         }
     </style>
 </head>

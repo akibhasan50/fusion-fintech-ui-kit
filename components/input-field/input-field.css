@@ -8,7 +8,7 @@
     flex-direction: column;
     gap: var(--spacing-3xs);
     width: 100%;
-    max-width: 420px;
+    max-width: 100%;
 }
 
 /* Label */
@@ -28,6 +28,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
     background-color: var(--color-surface-low-2);
     border: var(--border-2xs) solid var(--color-gray-base-regular);
     border-radius: var(--radius-m);
@@ -42,6 +43,8 @@
 /* Input */
 .input-field__input {
     flex: 1;
+    width: 100%;
+    min-width: 0;
     background: transparent;
     border: none;
     outline: none;
@@ -139,4 +142,10 @@
 .input-field__wrapper:focus-within {
     border-color: var(--color-accent-base-accent-primary);
     box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+@media (max-width: 768px) {
+    .input-field__input {
+        font-size: 16px;
+    }
 }
