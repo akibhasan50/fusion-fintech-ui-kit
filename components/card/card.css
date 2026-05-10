@@ -32,7 +32,8 @@
     box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.4);
 }
 
-.card[data-variant="bordered"] {
+.card[data-variant="bordered"],
+.card[data-variant="outline"] {
     border: var(--border-2xs) solid var(--color-accent-base-accent-primary);
 }
 
@@ -91,8 +92,7 @@
 }
 
 /* Hover effect */
-.card[data-hover="true"]:hover,
-.card:hover {
+.card[data-hover="true"]:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.15);
 }

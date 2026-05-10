@@ -23,12 +23,13 @@
     cursor: pointer;
     font-family: var(--font-general-font-name);
     font-size: var(--font-size-body-m);
-    color: var(--color-black-inverse);
+    color: var(--color-black-base);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark .select__button {
     background-color: var(--color-surface-medium);
+    color: var(--color-black-inverse);
 }
 
 .select__button:hover {

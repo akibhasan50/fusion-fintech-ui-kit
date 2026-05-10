@@ -155,26 +155,25 @@
 }
 
 /* ============== LOADING STATE ============== */
-.button__loader {
-    display: none;
-    animation: spin 1s linear infinite;
-    margin-right: 8px;
+.button[data-loading="true"] {
+    pointer-events: none;
+    cursor: wait;
 }
 
-.button[data-loading="true"] .button__label,
+.button[data-loading="true"]::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    animation: spin 0.9s linear infinite;
+    flex-shrink: 0;
+}
+
 .button[data-loading="true"] .button__icon,
 .button[data-loading="true"] .button__badge {
-    opacity: 0;
-}
-
-.button[data-loading="true"] .button__loader {
-    display: inline-block;
-}
-
-/* Loader SVG icon */
-.button__loader::before {
-    content: "⟳";
-    font-size: 18px;
+    display: none;
 }
 
 @keyframes spin {
